@@ -1,0 +1,289 @@
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--midnight-blue) 0%, var(--peacock-blue) 50%, var(--accent-color) 100%);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect fill="rgba(255,255,255,0.03)" width="50" height="50"/></svg>');
+  background-size: 50px 50px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -5%;
+  width: 40%;
+  height: 60%;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 600"><defs><radialGradient id="featherEye" cx="50%25" cy="40%25"><stop offset="0%25" style="stop-color:%23ffffff;stop-opacity:0.3"/><stop offset="20%25" style="stop-color:%2370B866;stop-opacity:0.25"/><stop offset="50%25" style="stop-color:%230645AD;stop-opacity:0.15"/><stop offset="80%25" style="stop-color:%23A77145;stop-opacity:0.1"/><stop offset="100%25" style="stop-color:transparent;stop-opacity:0"/></radialGradient></defs><ellipse cx="150" cy="120" rx="100" ry="130" fill="url(%23featherEye)" opacity="0.6"/><ellipse cx="150" cy="120" rx="50" ry="65" fill="rgba(6,69,173,0.2)" opacity="0.5"/><path d="M150,250 Q130,350 110,450 Q100,500 95,550" stroke="rgba(112,184,102,0.15)" stroke-width="4" fill="none"/><path d="M150,250 Q170,350 190,450 Q200,500 205,550" stroke="rgba(112,184,102,0.15)" stroke-width="4" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+  animation: floatFeather 25s ease-in-out infinite;
+  mix-blend-mode: overlay;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at top right, rgba(112, 184, 102, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at bottom left, rgba(167, 113, 69, 0.2) 0%, transparent 50%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem 0;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+/* Overview Section */
+.overview {
+  background: linear-gradient(135deg, rgba(112, 184, 102, 0.03) 0%, rgba(6, 69, 173, 0.03) 100%);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, var(--midnight-blue) 0%, var(--peacock-blue) 50%, var(--accent-color) 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(112, 184, 102, 0.2) 0%, transparent 50%);
+  animation: float 10s ease-in-out infinite;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* Mission Section */
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mission-text h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, var(--peacock-blue) 0%, var(--secondary-color) 50%, var(--sienna) 100%);
+  border-radius: 8px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(28, 41, 103, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--midnight-blue) 50%, var(--peacock-blue) 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(112, 184, 102, 0.15) 0%, transparent 60%);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .image-placeholder {
+    height: 250px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+

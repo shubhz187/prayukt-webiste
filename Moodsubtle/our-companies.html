@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Companies - Prayukt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Prayukt</a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="who-we-are.html" class="nav-link">Who We Are</a>
+                    <a href="our-companies.html" class="nav-link">Our Companies</a>
+                    <a href="what-we-do.html" class="nav-link">What We Do</a>
+                    <a href="investors.html" class="nav-link">Investors</a>
+                    <a href="news.html" class="nav-link">News</a>
+                    <a href="careers.html" class="nav-link">Careers</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="padding: 80px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 48px;">Our Companies</h1>
+                <p class="hero-subtitle">45+ specialist companies, each a leader in their field</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="section" style="padding-top: 60px; padding-bottom: 40px;">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Companies</button>
+                <button class="filter-btn" data-filter="safety">Safety</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="environmental">Environmental & Analysis</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="companies-grid" id="companiesGrid">
+                <!-- Safety Companies -->
+                <div class="company-card" data-sector="safety">
+                    <div class="company-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="company-badge">Safety</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Crowcon Detection Instruments</h3>
+                        <p class="company-location">UK | Global</p>
+                        <p class="company-description">World-leading manufacturer of gas detection equipment protecting workers in hazardous environments across mining, oil & gas, and industrial sectors.</p>
+                        <ul class="company-features">
+                            <li>Portable & fixed gas detectors</li>
+                            <li>50+ years of expertise</li>
+                            <li>Presence in 100+ countries</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="safety">
+                    <div class="company-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="company-badge">Safety</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Securiton</h3>
+                        <p class="company-location">Switzerland | Europe</p>
+                        <p class="company-description">Premium fire detection and alarm systems for critical infrastructure, including aspirating smoke detection and voice alarm systems.</p>
+                        <ul class="company-features">
+                            <li>Advanced fire detection</li>
+                            <li>Critical infrastructure protection</li>
+                            <li>Swiss precision engineering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="safety">
+                    <div class="company-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="company-badge">Safety</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Apollo Fire Detectors</h3>
+                        <p class="company-location">UK | Global</p>
+                        <p class="company-description">Innovative fire detection solutions with advanced algorithms reducing false alarms while maintaining the highest safety standards.</p>
+                        <ul class="company-features">
+                            <li>Intelligent fire detection</li>
+                            <li>Marine & offshore solutions</li>
+                            <li>Global compliance standards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="safety">
+                    <div class="company-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="company-badge">Safety</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Elflex Group</h3>
+                        <p class="company-location">Sweden | Europe</p>
+                        <p class="company-description">Elevator safety systems including governors, rope brakes, and monitoring solutions ensuring passenger safety in vertical transportation.</p>
+                        <ul class="company-features">
+                            <li>Elevator safety components</li>
+                            <li>Innovative monitoring systems</li>
+                            <li>Nordic engineering excellence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Healthcare Companies -->
+                <div class="company-card" data-sector="healthcare">
+                    <div class="company-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="company-badge">Healthcare</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Volk Optical</h3>
+                        <p class="company-location">USA</p>
+                        <p class="company-description">Premium ophthalmic lenses and instruments used by eye care professionals worldwide for diagnostic and surgical procedures.</p>
+                        <ul class="company-features">
+                            <li>Ophthalmic diagnostic lenses</li>
+                            <li>Surgical visualization</li>
+                            <li>Trusted by ophthalmologists globally</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="healthcare">
+                    <div class="company-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="company-badge">Healthcare</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Keeler</h3>
+                        <p class="company-location">UK</p>
+                        <p class="company-description">Heritage brand in ophthalmic instruments, including slit lamps, indirect ophthalmoscopes, and diagnostic equipment.</p>
+                        <ul class="company-features">
+                            <li>100+ years of innovation</li>
+                            <li>Comprehensive product range</li>
+                            <li>Global distribution network</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="healthcare">
+                    <div class="company-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="company-badge">Healthcare</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Diba Industries</h3>
+                        <p class="company-location">USA</p>
+                        <p class="company-description">Single-use fluid handling components for medical device and biopharmaceutical manufacturing, ensuring sterility and safety.</p>
+                        <ul class="company-features">
+                            <li>Bioprocessing solutions</li>
+                            <li>Sterile fluid handling</li>
+                            <li>Critical to drug manufacturing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="healthcare">
+                    <div class="company-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="company-badge">Healthcare</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Ocean Optics</h3>
+                        <p class="company-location">USA | Europe</p>
+                        <p class="company-description">Miniature spectrometers and optical sensing systems for medical diagnostics, biotechnology, and scientific research.</p>
+                        <ul class="company-features">
+                            <li>Spectroscopy solutions</li>
+                            <li>Medical diagnostics</li>
+                            <li>Research & development tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Environmental & Analysis Companies -->
+                <div class="company-card" data-sector="environmental">
+                    <div class="company-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="company-badge">Environmental</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Hach</h3>
+                        <p class="company-location">USA | Global</p>
+                        <p class="company-description">World leader in water quality testing and analysis, ensuring safe drinking water and environmental compliance worldwide.</p>
+                        <ul class="company-features">
+                            <li>Water quality analysis</li>
+                            <li>Laboratory & field instruments</li>
+                            <li>Global service network</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="environmental">
+                    <div class="company-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="company-badge">Environmental</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Aquas</h3>
+                        <p class="company-location">Portugal | Europe</p>
+                        <p class="company-description">Smart water metering solutions providing utilities with real-time data for leak detection and consumption management.</p>
+                        <ul class="company-features">
+                            <li>Smart water meters</li>
+                            <li>IoT-enabled monitoring</li>
+                            <li>Water conservation technology</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="environmental">
+                    <div class="company-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="company-badge">Environmental</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Palintest</h3>
+                        <p class="company-location">UK | Global</p>
+                        <p class="company-description">Portable water testing equipment and reagents for field analysis of water quality parameters in challenging environments.</p>
+                        <ul class="company-features">
+                            <li>Portable testing kits</li>
+                            <li>Field-ready solutions</li>
+                            <li>80+ years of expertise</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-card" data-sector="environmental">
+                    <div class="company-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="company-badge">Environmental</span>
+                    </div>
+                    <div class="company-body">
+                        <h3>Trojan Technologies</h3>
+                        <p class="company-location">Canada | Global</p>
+                        <p class="company-description">UV disinfection systems for water and wastewater treatment, providing chemical-free pathogen reduction.</p>
+                        <ul class="company-features">
+                            <li>UV disinfection technology</li>
+                            <li>Municipal & industrial solutions</li>
+                            <li>Environmental sustainability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Learn More About Our Companies?</h2>
+                <p>Each of our companies has unique capabilities and solutions. Connect with us to discover how we can help.</p>
+                <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Prayukt</h4>
+                    <ul>
+                        <li><a href="who-we-are.html">Who We Are</a></li>
+                        <li><a href="our-companies.html">Our Companies</a></li>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Investors</h4>
+                    <ul>
+                        <li><a href="investors.html">Investor Relations</a></li>
+                        <li><a href="#">Financial Reports</a></li>
+                        <li><a href="#">Share Information</a></li>
+                        <li><a href="#">Corporate Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Media & Careers</h4>
+                    <ul>
+                        <li><a href="news.html">Latest News</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporate Address</h4>
+                    <p>Prayukt Group plc<br>
+                    Misbourne Court<br>
+                    Amersham, Buckinghamshire<br>
+                    HP7 0DE, United Kingdom</p>
+                    <p><strong>Tel:</strong> +44 (0)1494 721111<br>
+                    <strong>Email:</strong> info@prayukt.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prayukt Group plc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .filter-tabs {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            border: 2px solid var(--primary-color);
+            background: var(--bg-white);
+            color: var(--primary-color);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }
+
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .company-card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .company-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .company-header {
+            height: 120px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: 16px;
+        }
+
+        .company-badge {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .company-body {
+            padding: 24px;
+        }
+
+        .company-body h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .company-location {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .company-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .company-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .company-features li {
+            color: var(--text-secondary);
+            font-size: 14px;
+            padding: 6px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .company-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .companies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const companyCards = document.querySelectorAll('.company-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                companyCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-sector') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

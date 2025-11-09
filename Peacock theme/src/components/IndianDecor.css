@@ -1,0 +1,246 @@
+.indian-decor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Large Peacock Feather Patterns */
+.peacock-feather {
+  position: absolute;
+  width: 180px;
+  height: 450px;
+  opacity: 0.12;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 450"%3E%3Cdefs%3E%3CradialGradient id="eye1" cx="50%25" cy="20%25"%3E%3Cstop offset="0%25" style="stop-color:%231C2967;stop-opacity:0.8"/%3E%3Cstop offset="25%25" style="stop-color:%230645AD;stop-opacity:0.6"/%3E%3Cstop offset="50%25" style="stop-color:%2370B866;stop-opacity:0.4"/%3E%3Cstop offset="75%25" style="stop-color:%23A77145;stop-opacity:0.3"/%3E%3Cstop offset="100%25" style="stop-color:%234D803F;stop-opacity:0.1"/%3E%3C/radialGradient%3E%3ClinearGradient id="shaft1" x1="0%25" y1="0%25" x2="0%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%2370B866;stop-opacity:0.4"/%3E%3Cstop offset="100%25" style="stop-color:%234D803F;stop-opacity:0.2"/%3E%3C/linearGradient%3E%3C/defs%3E%3C!-- Peacock Eye --%3E%3Cellipse cx="90" cy="90" rx="75" ry="95" fill="url(%23eye1)"/%3E%3Cellipse cx="90" cy="90" rx="60" ry="75" fill="%230645AD" opacity="0.5"/%3E%3Cellipse cx="90" cy="85" rx="45" ry="55" fill="%2370B866" opacity="0.4"/%3E%3Cellipse cx="90" cy="85" rx="30" ry="38" fill="%231C2967" opacity="0.6"/%3E%3Cellipse cx="90" cy="82" rx="15" ry="20" fill="%23A77145" opacity="0.7"/%3E%3Cellipse cx="90" cy="80" rx="8" ry="10" fill="%231C2967" opacity="0.9"/%3E%3C!-- Feather Shaft --%3E%3Cpath d="M90,185 Q88,250 86,320 Q85,380 84,440" stroke="url(%23shaft1)" stroke-width="4" fill="none"/%3E%3C!-- Barbs Left Side --%3E%3Cpath d="M90,190 Q70,210 55,230" stroke="%2370B866" stroke-width="2" opacity="0.3" fill="none"/%3E%3Cpath d="M89,210 Q65,235 50,260" stroke="%2370B866" stroke-width="2" opacity="0.3" fill="none"/%3E%3Cpath d="M88,230 Q60,260 45,290" stroke="%234D803F" stroke-width="1.5" opacity="0.25" fill="none"/%3E%3Cpath d="M87,250 Q55,285 40,320" stroke="%234D803F" stroke-width="1.5" opacity="0.25" fill="none"/%3E%3Cpath d="M86,270 Q50,310 38,350" stroke="%234D803F" stroke-width="1" opacity="0.2" fill="none"/%3E%3Cpath d="M86,290 Q48,335 36,380" stroke="%234D803F" stroke-width="1" opacity="0.2" fill="none"/%3E%3Cpath d="M85,310 Q46,360 35,410" stroke="%234D803F" stroke-width="1" opacity="0.15" fill="none"/%3E%3C!-- Barbs Right Side --%3E%3Cpath d="M90,190 Q110,210 125,230" stroke="%2370B866" stroke-width="2" opacity="0.3" fill="none"/%3E%3Cpath d="M91,210 Q115,235 130,260" stroke="%2370B866" stroke-width="2" opacity="0.3" fill="none"/%3E%3Cpath d="M92,230 Q120,260 135,290" stroke="%234D803F" stroke-width="1.5" opacity="0.25" fill="none"/%3E%3Cpath d="M93,250 Q125,285 140,320" stroke="%234D803F" stroke-width="1.5" opacity="0.25" fill="none"/%3E%3Cpath d="M94,270 Q130,310 142,350" stroke="%234D803F" stroke-width="1" opacity="0.2" fill="none"/%3E%3Cpath d="M94,290 Q132,335 144,380" stroke="%234D803F" stroke-width="1" opacity="0.2" fill="none"/%3E%3Cpath d="M95,310 Q134,360 145,410" stroke="%234D803F" stroke-width="1" opacity="0.15" fill="none"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(0.5px);
+  transition: opacity 0.5s ease;
+}
+
+.feather-large-1 {
+  top: -50px;
+  right: 10%;
+  transform: rotate(25deg);
+  animation: floatFeather 22s ease-in-out infinite, fadeInOut 10s ease-in-out infinite;
+}
+
+.feather-large-2 {
+  top: 15%;
+  left: 5%;
+  transform: rotate(-35deg);
+  animation: floatFeather 28s ease-in-out infinite reverse, fadeInOut 12s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.feather-large-3 {
+  bottom: 10%;
+  right: 8%;
+  transform: rotate(45deg);
+  animation: floatFeather 25s ease-in-out infinite, fadeInOut 14s ease-in-out infinite;
+  animation-delay: 6s;
+}
+
+.feather-large-4 {
+  bottom: 20%;
+  left: 12%;
+  transform: rotate(-15deg);
+  animation: floatFeather 30s ease-in-out infinite reverse, fadeInOut 11s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.feather-large-5 {
+  top: 40%;
+  right: 3%;
+  transform: rotate(60deg);
+  animation: floatFeather 26s ease-in-out infinite, fadeInOut 13s ease-in-out infinite;
+  animation-delay: 8s;
+  opacity: 0.08;
+}
+
+/* Peacock Eye Only Patterns (the iconic circles) */
+.peacock-eye {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  opacity: 0.15;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"%3E%3Cdefs%3E%3CradialGradient id="eye2" cx="50%25" cy="50%25"%3E%3Cstop offset="0%25" style="stop-color:%23A77145;stop-opacity:0.9"/%3E%3Cstop offset="20%25" style="stop-color:%231C2967;stop-opacity:0.8"/%3E%3Cstop offset="40%25" style="stop-color:%230645AD;stop-opacity:0.6"/%3E%3Cstop offset="60%25" style="stop-color:%2370B866;stop-opacity:0.4"/%3E%3Cstop offset="80%25" style="stop-color:%23A77145;stop-opacity:0.3"/%3E%3Cstop offset="100%25" style="stop-color:%234D803F;stop-opacity:0.1"/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx="70" cy="70" r="65" fill="url(%23eye2)"/%3E%3Ccircle cx="70" cy="70" r="50" fill="%230645AD" opacity="0.5"/%3E%3Ccircle cx="70" cy="70" r="35" fill="%2370B866" opacity="0.4"/%3E%3Ccircle cx="70" cy="68" r="22" fill="%231C2967" opacity="0.6"/%3E%3Ccircle cx="70" cy="66" r="12" fill="%23A77145" opacity="0.8"/%3E%3Ccircle cx="70" cy="65" r="5" fill="%231C2967" opacity="0.9"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.eye-1 {
+  top: 25%;
+  left: 18%;
+  animation: pulse 15s ease-in-out infinite, float 20s ease-in-out infinite;
+}
+
+.eye-2 {
+  bottom: 30%;
+  right: 20%;
+  animation: pulse 18s ease-in-out infinite, float 24s ease-in-out infinite reverse;
+  animation-delay: 4s;
+}
+
+.eye-3 {
+  top: 55%;
+  left: 8%;
+  animation: pulse 20s ease-in-out infinite, float 22s ease-in-out infinite;
+  animation-delay: 7s;
+  opacity: 0.1;
+}
+
+/* Small Accent Feathers */
+.feather-accent {
+  position: absolute;
+  width: 120px;
+  height: 300px;
+  opacity: 0.18;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 300"%3E%3Cdefs%3E%3CradialGradient id="eye3" cx="50%25" cy="25%25"%3E%3Cstop offset="0%25" style="stop-color:%231C2967;stop-opacity:0.6"/%3E%3Cstop offset="30%25" style="stop-color:%230645AD;stop-opacity:0.5"/%3E%3Cstop offset="60%25" style="stop-color:%2370B866;stop-opacity:0.3"/%3E%3Cstop offset="100%25" style="stop-color:%234D803F;stop-opacity:0.1"/%3E%3C/radialGradient%3E%3C/defs%3E%3Cellipse cx="60" cy="55" rx="50" ry="65" fill="url(%23eye3)"/%3E%3Cellipse cx="60" cy="55" rx="32" ry="42" fill="%230645AD" opacity="0.4"/%3E%3Cellipse cx="60" cy="52" rx="18" ry="24" fill="%231C2967" opacity="0.5"/%3E%3Cpath d="M60,120 Q58,180 57,240 Q56,270 55,295" stroke="%2370B866" stroke-width="3" fill="none" opacity="0.4"/%3E%3Cpath d="M60,125 Q50,155 45,185" stroke="%2370B866" stroke-width="1.5" opacity="0.3" fill="none"/%3E%3Cpath d="M60,135 Q48,170 42,205" stroke="%234D803F" stroke-width="1.5" opacity="0.25" fill="none"/%3E%3Cpath d="M60,125 Q70,155 75,185" stroke="%2370B866" stroke-width="1.5" opacity="0.3" fill="none"/%3E%3Cpath d="M60,135 Q72,170 78,205" stroke="%234D803F" stroke-width="1.5" opacity="0.25" fill="none"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(0.3px);
+}
+
+.feather-accent-1 {
+  top: 8%;
+  right: 25%;
+  transform: rotate(20deg);
+  animation: floatFeather 18s ease-in-out infinite, fadeInOut 9s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.feather-accent-2 {
+  bottom: 15%;
+  left: 22%;
+  transform: rotate(-25deg);
+  animation: floatFeather 21s ease-in-out infinite reverse, fadeInOut 11s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+.feather-accent-3 {
+  top: 60%;
+  right: 15%;
+  transform: rotate(35deg);
+  animation: floatFeather 19s ease-in-out infinite, fadeInOut 10s ease-in-out infinite;
+  animation-delay: 3s;
+  opacity: 0.12;
+}
+
+/* Animations */
+@keyframes floatFeather {
+  0%, 100% {
+    transform: translateY(0) translateX(0) rotate(var(--rotate, 0deg));
+  }
+  25% {
+    transform: translateY(-30px) translateX(15px) rotate(calc(var(--rotate, 0deg) + 5deg));
+  }
+  50% {
+    transform: translateY(-10px) translateX(30px) rotate(calc(var(--rotate, 0deg) - 3deg));
+  }
+  75% {
+    transform: translateY(20px) translateX(15px) rotate(calc(var(--rotate, 0deg) + 3deg));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-25px) translateX(12px);
+  }
+  50% {
+    transform: translateY(-5px) translateX(25px);
+  }
+  75% {
+    transform: translateY(15px) translateX(12px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.12;
+  }
+  50% {
+    opacity: 0.22;
+  }
+}
+
+/* Custom rotation values for each feather */
+.feather-large-1 { --rotate: 25deg; }
+.feather-large-2 { --rotate: -35deg; }
+.feather-large-3 { --rotate: 45deg; }
+.feather-large-4 { --rotate: -15deg; }
+.feather-large-5 { --rotate: 60deg; }
+.feather-accent-1 { --rotate: 20deg; }
+.feather-accent-2 { --rotate: -25deg; }
+.feather-accent-3 { --rotate: 35deg; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .peacock-feather {
+    width: 140px;
+    height: 350px;
+  }
+  
+  .peacock-eye {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .feather-accent {
+    width: 90px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .peacock-feather {
+    width: 110px;
+    height: 280px;
+    opacity: 0.08;
+  }
+  
+  .peacock-eye {
+    width: 80px;
+    height: 80px;
+    opacity: 0.1;
+  }
+  
+  .feather-accent {
+    width: 70px;
+    height: 180px;
+    opacity: 0.12;
+  }
+  
+  /* Hide some feathers on mobile for performance */
+  .feather-large-5,
+  .feather-accent-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .feather-large-4,
+  .eye-3 {
+    display: none;
+  }
+}

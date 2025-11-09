@@ -1,0 +1,241 @@
+.page-hero {
+  background: linear-gradient(135deg, var(--midnight-blue) 0%, var(--peacock-blue) 50%, var(--accent-color) 100%);
+  color: var(--white);
+  padding: 6rem 0 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(112, 184, 102, 0.2) 0%, transparent 60%);
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.page-hero p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.content-split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content-text h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.content-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.visual-box {
+  background: linear-gradient(135deg, var(--peacock-blue) 0%, var(--secondary-color) 50%, var(--sienna) 100%);
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--white);
+  box-shadow: 0 10px 30px rgba(28, 41, 103, 0.2);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 25s linear infinite;
+}
+
+.visual-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.visual-box p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Values Section */
+.values-section {
+  background: linear-gradient(135deg, rgba(112, 184, 102, 0.04) 0%, rgba(167, 113, 69, 0.04) 100%);
+}
+
+.value-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.value-card:hover {
+  border-color: var(--secondary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  background: var(--light-bg);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.info-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* History Section */
+.history-section {
+  background: linear-gradient(135deg, rgba(6, 69, 173, 0.03) 0%, rgba(112, 184, 102, 0.03) 100%);
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--secondary-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  border: 4px solid var(--white);
+  box-shadow: 0 0 0 4px var(--secondary-color);
+}
+
+.timeline-content {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero p {
+    font-size: 1.1rem;
+  }
+
+  .content-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .visual-box {
+    min-height: 200px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-marker {
+    left: 5px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
